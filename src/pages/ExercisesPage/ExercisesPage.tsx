@@ -1,20 +1,20 @@
 import { Panel } from "@vkontakte/vkui";
 import { FC, MouseEventHandler } from "react";
 import BaseLayout from "../../layouts/BaseLayout";
-import LessonItem from "../../components/LessonItem/LessonItem";
+import Exercises from "../../components/Exercises/Exercises";
 
-interface LessonItemPageProps {
+interface ExercisesPageProps {
   id: string;
   onNavigator: MouseEventHandler<HTMLElement>;
 }
 
-const LessonItemPage: FC<LessonItemPageProps> = (props) => {
+const ExercisesPage: FC<ExercisesPageProps> = (props) => {
   const { id, onNavigator } = props;
 
   return (
     <Panel id={id}>
       <BaseLayout>
-        <LessonItem />
+        <Exercises />
 
         <button onClick={onNavigator} data-to="home">
           back
@@ -29,4 +29,4 @@ const LessonItemPage: FC<LessonItemPageProps> = (props) => {
   );
 };
 
-export default LessonItemPage;
+export default ExercisesPage;

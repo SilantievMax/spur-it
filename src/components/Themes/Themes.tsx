@@ -3,7 +3,7 @@ import { spurs } from "../../data/data";
 import Card from "../../ui/Card/Card";
 import Text from "../../ui/Text/Text";
 
-const LessonList = () => {
+const Themes = () => {
   return (
     <div className="grid grid-cols-2 gap-10">
       {_.map(spurs, (data) => {
@@ -19,4 +19,4 @@ const LessonList = () => {
   );
 };
 
-export default LessonList;
+export default Themes;

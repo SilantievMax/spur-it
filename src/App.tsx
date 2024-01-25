@@ -1,9 +1,9 @@
 import { MouseEventHandler, useState } from "react";
 import { View } from "@vkontakte/vkui";
 
-import LessonListPage from "./pages/LessonListPage/LessonListPage";
-import LessonItemPage from "./pages/LessonItemPage/LessonItemPage";
-import LessonPage from "./pages/LessonPage/LessonPage";
+import ExercisesPage from "./pages/ExercisesPage/ExercisesPage";
+import ContentPage from "./pages/ContentPage/ContentPage";
+import ThemesPage from "./pages/ThemesPage/ThemesPage";
 
 const App = () => {
   const [activePanel, setActivePanel] = useState("home");
@@ -14,11 +14,11 @@ const App = () => {
 
   return (
     <View activePanel={activePanel}>
-      <LessonListPage id="home" onNavigator={handleNavigator} />
+      <ThemesPage id="home" onNavigator={handleNavigator} />
 
-      <LessonItemPage id="item" onNavigator={handleNavigator} />
+      <ExercisesPage id="item" onNavigator={handleNavigator} />
 
-      <LessonPage id="lesson" onNavigator={handleNavigator} />
+      <ContentPage id="lesson" onNavigator={handleNavigator} />
     </View>
   );
 };

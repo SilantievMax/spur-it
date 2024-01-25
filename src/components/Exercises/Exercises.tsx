@@ -1,6 +1,6 @@
 import Card from "../../ui/Card/Card";
 
-const LessonItem = () => {
+const Exercises = () => {
   return (
     <div className="grid grid-cols-1 gap-10">
       <Card>Test1</Card>
@@ -18,4 +18,4 @@ const LessonItem = () => {
   );
 };
 
-export default LessonItem;
+export default Exercises;

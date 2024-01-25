@@ -1,21 +1,21 @@
 import { Panel } from "@vkontakte/vkui";
-import LessonList from "../../components/LessonList/LessonList";
-import { FC, MouseEventHandler } from "react";
+import React, { FC, MouseEventHandler } from "react";
 import BaseLayout from "../../layouts/BaseLayout";
 
-interface LessonListPageProps {
+interface ContentPageProps {
   id: string;
   onNavigator: MouseEventHandler<HTMLElement>;
 }
 
-const LessonListPage: FC<LessonListPageProps> = (props) => {
+const ContentPage: FC<ContentPageProps> = (props) => {
   const { id, onNavigator } = props;
 
   return (
     <Panel id={id}>
       <BaseLayout>
-        <LessonList />
-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi,
+        accusantium voluptate nihil, facere, eos quibusdam vero quia et
+        consectetur voluptatum nam repellendus iure!
         <button onClick={onNavigator} data-to="item">
           click
         </button>
@@ -24,4 +24,4 @@ const LessonListPage: FC<LessonListPageProps> = (props) => {
   );
 };
 
-export default LessonListPage;
+export default ContentPage;
